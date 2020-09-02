@@ -29,7 +29,7 @@ let path = {
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico.webp}",
   },
   clean: "./" + project_folder + "/",
-};
+}
 
 let { src, dest } = require("gulp"),
   gulp = require("gulp"),
@@ -137,7 +137,7 @@ function fonts(){
   src(path.src.fonts)
   .pipe(ttf2woff())
   .pipe(dest(path.build.fonts));
- return src(path.src.fonts)
+  return src(path.src.fonts)
   .pipe(ttf2woff2())
   .pipe(dest(path.build.fonts));
 }

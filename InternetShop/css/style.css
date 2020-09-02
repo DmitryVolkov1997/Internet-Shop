@@ -382,6 +382,52 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'AnyConv.com__SFProDisplay-Regular', sans-serif;
+  src: url("../fonts/AnyConv.com__SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/AnyConv.com__SFProDisplay-Regular.woff") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnyConv.com__SFProDisplay-Medium', sans-serif;
+  src: url("../fonts/AnyConv.com__SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/AnyConv.com__SFProDisplay-Medium.woff") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnyConv.com__SFProDisplay-Semibold', sans-serif;
+  src: url("../fonts/AnyConv.com__SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/AnyConv.com__SFProDisplay-Semibold.woff") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnyConv.com__SFProDisplay-Bold', sans-serif;
+  src: url("../fonts/AnyConv.com__SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/AnyConv.com__SFProDisplay-Bold.woff") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'AnyConv.com__SFProDisplay-Regular', sans-serif;
+  color: #2F3035;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -415,6 +461,116 @@ h6 {
   margin: 0;
 }
 
-body {
-  color: #2F3035;
+.header__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 122px;
+  font-family: 'AnyConv.com__SFProDisplay-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.menu__item {
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.menu__item:first-child {
+  padding-left: 0;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__adress {
+  position: relative;
+  margin-right: 60px;
+  width: 265px;
+  padding-left: 30px;
+}
+
+.header__adress::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-image: url(../img/adress-icon.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.user-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+
+.user-list__item {
+  padding-right: 10px;
+}
+
+.basket {
+  position: relative;
+}
+
+.basket__num {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  border-radius: 50%;
+  background: #1C62CD;
+  color: #ffffff;
+  text-align: center;
+  bottom: -15px;
+  right: -14px;
+}
+
+.menu-categories {
+  background-color: #F0F0F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 53px;
+}
+
+.menu-categories__item {
+  position: relative;
+}
+
+.menu-categories__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  padding: 15px 0 14px;
+}
+
+.menu-categories__link:hover {
+  font-family: 'AnyConv.com__SFProDisplay-Semibold', sans-serif;
+  font-weight: 600;
 }

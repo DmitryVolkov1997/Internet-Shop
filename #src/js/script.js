@@ -16,3 +16,10 @@ testWebP(function (support) {
   }
 });
 //================END================
+@@include('slick.min.js');
+
+$(function(){
+  $('.banner-section__slider').slick({
+
+  });
+});

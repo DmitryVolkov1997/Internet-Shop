@@ -36,6 +36,10 @@ h6 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 
 
 .header__top-inner {
@@ -106,7 +110,7 @@ h6 {
     right: -14px;
 }
 
-.header__bottom{
+.header__bottom {
     margin-bottom: 78px;
 }
 
@@ -153,13 +157,154 @@ h6 {
 }
 
 
-// 27:12 3 урок
+.banner-section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-section__slider {
+    max-width: 870px;
+}
+
+.banner-section__slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+}
+
+.banner-section__slider-btnprev {
+    left: 20px;
+}
+
+.banner-section__slider-btnpnext {
+    right: 20px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    button {
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+        width: 11px;
+        height: 11px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.slick-active {
+    button {
+        background-color: #fff;
+    }
+}
+
+.price {
+    position: relative;
+}
 
 
+.sale-item {
+    max-width: 265px;
+    text-align: center;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
+    &__info {
+        font-family: 'AnyConv.com__SFProDisplay-Bold', sans-serif;
+        font-weight: 700;
+        background-color: $blue;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 8px 20px;
+    }
 
+    &__price {
+        font-family: 'Barlow-Bold', sans-serif;
+        font-weight: 700;
+        text-align: right;
+        position: relative;
+    }
 
+    &__price-new {
+        position: relative;
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $blue;
+        margin-right: 6px;
+        padding-right: 20px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 6px;
+            background-image: url(../img/icons-price.svg);
+            width: 15px;
+            height: 18px;
+        }
+    }
+
+    &__price-old {
+        font-family: 'Barlow-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $silver;
+        margin-right: 15px;
+        background-image: url(../img/old-line.svg);
+        background-repeat: no-repeat;
+        padding: 2px 5px;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            bottom: 0;
+            top: 5px;
+            background-image: url(../img/icons-price-old.svg);
+            width: 8px;
+            height: 10px;
+        }
+    }
+}
+
+// 1:07:40 3 урок
 
 
 

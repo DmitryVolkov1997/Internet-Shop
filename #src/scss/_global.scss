@@ -1,5 +1,5 @@
 body {
-    font-family: 'AnyConv.com__SFProDisplay-Regular', sans-serif;
+    font-family: 'AnyConv.com__SFProDisplay-Regular';
     color: $granite;
     font-size: 20px;
     line-height: 24px;
@@ -10,4 +10,8 @@ body {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.page-section{
+    margin-bottom: 80px;
 }

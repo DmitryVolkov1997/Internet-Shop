@@ -352,11 +352,11 @@ p {
     font-weight: 700;
 }
 
-.search__content-item{
+.search__content-item {
     display: none;
 }
 
-.search__content-item--active{
+.search__content-item--active {
     display: block;
 }
 
@@ -375,7 +375,7 @@ p {
     outline: none;
     width: 100%;
 
-    &::placeholder{
+    &::placeholder {
         font-size: 16px;
         line-height: 19px;
         color: $dull-gray;
@@ -399,7 +399,70 @@ p {
     cursor: pointer;
 }
 
+// Start Categories 
+.categories__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+
+.categories__item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    width: 370px;
+    padding: 20px 20px 16px;
+    transition: 0.3s linear;
+
+    &:hover{
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    }
+
+    &:hover &-title {
+        color: $blue;
+    }
+
+    &-title {
+        color: $granite;
+        font-family: 'AnyConv.com__SFProDisplay-Bold';
+        font-weight: 70;
+        font-size: 23px;
+        line-height: 28px;
+        transition: 0.3s linear;
+    }
+
+    &-text {
+        font-size: 14px;
+        line-height: 17px;
+        color: $silver;
+
+        &::after {
+            content: url('../img/link-arrow.svg');
+            padding-left: 2px;
+        }
+    }
+
+    &-img {
+        text-align: center;
+        width: 50%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.categories__item-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// 5 урок закончил
 
 
 

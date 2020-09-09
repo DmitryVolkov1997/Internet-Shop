@@ -929,7 +929,7 @@ p {
   padding: 11px 26px 12px;
 }
 
-.search__tabs-item--active {
+.search__tabs-item.tab--active {
   border-radius: 5px;
   background-color: #F0F0F4;
   font-family: 'AnyConv.com__SFProDisplay-Bold';
@@ -940,7 +940,7 @@ p {
   display: none;
 }
 
-.search__content-item--active {
+.search__content-item.tabs-content--active {
   display: block;
 }
 
@@ -1089,4 +1089,68 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.product-item__wrapper {
+  position: relative;
+  width: 271px;
+}
+
+.product-item {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  text-align: center;
+  padding: 52px 20px 31px;
+}
+
+.product-item__title {
+  font-weight: normal;
+  padding: 14px 0 25px;
+}
+
+.product-item__favorite {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  width: 24px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  z-index: 5;
+  outline: none;
+}
+
+.product-item__favorite::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/favorite.svg);
+  width: 24px;
+  height: 22px;
+}
+
+.product-item__favorite--active::before {
+  background-image: url(../img/favorite-active.svg);
+}
+
+.product-item__basket {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background-color: #1C62CD;
+  border: none;
+  border-radius: 10px 0px 0px 0px;
+  padding-top: 7px;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-item__price {
+  font-family: 'Barlow-Bold';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }

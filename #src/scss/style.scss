@@ -171,7 +171,8 @@ p {
     min-height: 400px;
 }
 
-.banner-section__slider-btn {
+.banner-section__slider-btn,
+.products__slider__slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -219,7 +220,7 @@ p {
 }
 
 .slick-active {
-    button {
+    li button {
         background-color: #fff;
     }
 }
@@ -352,11 +353,11 @@ p {
     font-weight: 700;
 }
 
-.search__content-item {
+.tabs-content {
     display: none;
 }
 
-.search__content-item.tabs-content--active {
+.tabs-content.tabs-content--active {
     display: block;
 }
 
@@ -536,6 +537,7 @@ p {
 
     &__basket {
         position: absolute;
+        z-index: 10;
         bottom: 0;
         right: 0;
         width: 60px;
@@ -617,6 +619,59 @@ p {
     border-bottom: 1px solid $blue;
 }
 
-// 1:24:34 (6 lesson)
+.product__title {
+    font-family: 'AnyConv.com__SFProDisplay-Bold';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.products__tabs {
+    margin-bottom: 25px;
+}
+
+.products__tab {
+    margin-right: 50px;
+    padding-bottom: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.tab--active {
+        border-bottom: 2px solid $blue;
+    }
+
+}
+
+.products__slider__slider-btnprev {
+    left: -40px;
+}
+
+.products__slider__slider-btnpnext {
+    right: -40px;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+.product__more{
+    text-align: center;
+    margin: 35px 0 80px;
+}
+
+.product__item-link {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 16px 43px;
+    background-color: $crayola;
+}
+
+// 6 урок досмотрел
+
 
 @import "_media";

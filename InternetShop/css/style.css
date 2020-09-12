@@ -743,7 +743,8 @@ p {
   min-height: 400px;
 }
 
-.banner-section__slider-btn {
+.banner-section__slider-btn,
+.products__slider__slider-btn {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -792,7 +793,7 @@ p {
   cursor: pointer;
 }
 
-.slick-active button {
+.slick-active li button {
   background-color: #fff;
 }
 
@@ -936,11 +937,11 @@ p {
   font-weight: 700;
 }
 
-.search__content-item {
+.tabs-content {
   display: none;
 }
 
-.search__content-item.tabs-content--active {
+.tabs-content.tabs-content--active {
   display: block;
 }
 
@@ -1165,6 +1166,7 @@ p {
 
 .product-item__basket {
   position: absolute;
+  z-index: 10;
   bottom: 0;
   right: 0;
   width: 60px;
@@ -1246,4 +1248,55 @@ p {
 
 .product-item__wrapper.product-item__not-available .product-item__notify-link span {
   border-bottom: 1px solid #1C62CD;
+}
+
+.product__title {
+  font-family: 'AnyConv.com__SFProDisplay-Bold';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.products__tabs {
+  margin-bottom: 25px;
+}
+
+.products__tab {
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+
+.products__tab:last-child {
+  margin-right: 0;
+}
+
+.products__tab.tab--active {
+  border-bottom: 2px solid #1C62CD;
+}
+
+.products__slider__slider-btnprev {
+  left: -40px;
+}
+
+.products__slider__slider-btnpnext {
+  right: -40px;
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+.product__more {
+  text-align: center;
+  margin: 35px 0 80px;
+}
+
+.product__item-link {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 16px 43px;
+  background-color: #F0F0F4;
 }

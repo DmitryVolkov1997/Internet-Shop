@@ -33,35 +33,23 @@ $(function () {
 
     $(".tab").removeClass("tab--active");
     $(".tabs-content").removeClass("tabs-content--active");
-    
-    $(this).addClass('tab--active');
-    $($(this).attr('href')).addClass('tabs-content--active');
+
+    $(this).addClass("tab--active");
+    $($(this).attr("href")).addClass("tabs-content--active");
   });
-
-
-
 
   // Start Heart
-
-  $('.product-item__favorite').on('click', function(){
-    $('.product-item__favorite').toggleClass('product-item__favorite--active')
+  $(".product-item__favorite").on("click", function () {
+    $(this).toggleClass("product-item__favorite--active");
   });
 
+  // Start Slider
+  $(".product-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button class="products__slider__slider-btn products__slider__slider-btnprev"><img src="img/arrow-black-left.svg" alt=""></button>',
+    nextArrow:
+      '<button class="products__slider__slider-btn products__slider__slider-btnpnext"><img src="img/arrow-black-right.svg" alt=""></button>',
+  });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -645,6 +645,10 @@ p {
 
 }
 
+.products {
+    margin-bottom: 80px;
+}
+
 .products__slider__slider-btnprev {
     left: -40px;
 }
@@ -659,7 +663,7 @@ p {
 
 .product__more{
     text-align: center;
-    margin: 35px 0 80px;
+    margin: 35px 0 0;
 }
 
 .product__item-link {
@@ -671,7 +675,10 @@ p {
     background-color: $crayola;
 }
 
-// 6 урок досмотрел
-
+// Start Banner
+.banner {
+    margin-bottom: 80px;
+}
+ // Досмотрел 7 урок
 
 @import "_media";

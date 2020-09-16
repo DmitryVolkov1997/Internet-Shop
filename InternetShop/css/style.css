@@ -1308,3 +1308,144 @@ p {
 .banner {
   margin-bottom: 80px;
 }
+
+.footer {
+  background-color: #F0F0F4;
+}
+
+.footer__top {
+  padding-top: 43px;
+}
+
+.footer__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__top-item {
+  width: 200px;
+}
+
+.footer__top-newsletter.footer__top-item {
+  width: 295px;
+  margin-right: 50px;
+}
+
+.footer__top-title {
+  font-family: 'AnyConv.com__SFProDisplay-Bold';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 34px;
+}
+
+.footer-form__input {
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.footer-form__input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.footer-form__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.footer-form__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.footer-form__input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.footer-form__input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.footer-form__btn {
+  font-family: 'AnyConv.com__SFProDisplay-Semibold';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  background-color: #1C62CD;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+}
+
+.footer-list {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 46px 0 22px;
+}
+
+.footer__bottom-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #48494D;
+  margin: 0 40px;
+}
+
+.footer__top-social.footer__top-item {
+  width: 250px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.social-list__item {
+  margin-left: 30px;
+}
+
+.social-list__item:first-child {
+  margin-left: 0;
+}

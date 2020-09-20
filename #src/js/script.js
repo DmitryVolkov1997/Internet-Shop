@@ -17,6 +17,9 @@ testWebP(function (support) {
 });
 //================END================
 @@include("slick.min.js");
+@@include("ion.rangeSlider.min.js");
+@@include("jquery.formstyler.min.js");
+@@include("jquery.rateyo.min.js");
 
 $(function () {
   $(".banner-section__slider").slick({
@@ -53,3 +56,5 @@ $(function () {
       '<button class="products__slider__slider-btn products__slider__slider-btnpnext"><img src="img/arrow-black-right.svg" alt=""></button>',
   });
 });
+
+  

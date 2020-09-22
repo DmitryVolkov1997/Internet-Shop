@@ -950,15 +950,54 @@ p {
 	}
 }
 
-//  3 урок 22:34
+.aside-filter__item-drop {
+	margin: 40px 0;
+}
 
+.aside-filter__item-title {
+	font-family: 'AnyConv.com__SFProDisplay-Semibold';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	padding-left: 26px;
+}
 
+.filter__item-drop {
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
 
+	&::before {
+		position: absolute;
+		left: 0;
+		bottom: 5px;
+		content: '';
+		background-image: url(../img/arrow-down.svg);
+		width: 12px;
+		height: 8px;
+		transform: rotate(0deg);
+	}
+}
 
+.filter__item-drop--active::before {
+	transform: rotate(180deg);
+}
 
+.aside-filter__content {
+	display: flex;
 
+	&-box {
+		width: 50%;
+	}
 
+	&-label {
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
 
+// Досмотрел 3 урок ФИЛЬТРЫ
 
 
 

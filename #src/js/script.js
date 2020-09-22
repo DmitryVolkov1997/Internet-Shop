@@ -35,7 +35,9 @@ $(function () {
     e.preventDefault();
 
     $($(this).siblings()).removeClass("tab--active");
-    $($(this).parent().siblings().find('div')).removeClass("tabs-content--active");
+    $($(this).parent().siblings().find("div")).removeClass(
+      "tabs-content--active"
+    );
 
     $(this).addClass("tab--active");
     $($(this).attr("href")).addClass("tabs-content--active");
@@ -55,6 +57,16 @@ $(function () {
     nextArrow:
       '<button class="products__slider__slider-btn products__slider__slider-btnpnext"><img src="img/arrow-black-right.svg" alt=""></button>',
   });
-});
 
-  
+  $(".filter-style").styler();
+
+  $(".filter__item-drop").on('click', function(){
+	$(this).toggleClass("filter__item-drop--active");
+	$(this).next().slideToggle(200);
+  });
+
+
+
+
+
+});

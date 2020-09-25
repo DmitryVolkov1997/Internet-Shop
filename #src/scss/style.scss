@@ -964,7 +964,6 @@ p {
 
 .filter__item-drop {
 	position: relative;
-	margin-bottom: 20px;
 	cursor: pointer;
 
 	&::before {
@@ -985,6 +984,8 @@ p {
 
 .aside-filter__content {
 	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
 
 	&-box {
 		width: 50%;
@@ -997,14 +998,125 @@ p {
 	}
 }
 
-// Досмотрел 3 урок ФИЛЬТРЫ
+.jq-checkbox,
+.jq-radio {
+	background: #ffffff;
+	border: 1px solid $silver;
+	border-radius: 1px;
+	box-shadow: none;
+	width: 14px;
+	height: 14px;
+	vertical-align: -2px;
+	margin: 0px 8px 0px 0px;
+}
 
+.jq-checkbox.checked,
+.jq-radio.checked {
+	background: $blue;
+	border: none;
+}
 
+.jq-checkbox.checked .jq-checkbox__div {
+	width: 8px;
+	height: 6px;
+	margin: 4px 0 0 3px;
+	border-bottom: none;
+	border-left: none;
+	transform: rotate(0);
+	background-image: url(../img/checked-ico.svg);
+}
 
+.jq-radio.checked .jq-radio__div {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
 
+.aside-filter__content.aside-filter__content-radio {
+	flex-wrap: nowrap;
+}
 
+.irs--flat {
+	width: 100%;
+	margin-top: -15px;
+}
 
+.irs--flat .irs-from,
+.irs--flat .irs-single,
+.irs--flat .irs-to {
+	display: none;
+}
 
+.irs--flat .irs-max,
+.irs--flat .irs-min {
+	font-family: 'Barlow-Regular';
+	top: 55px;
+	padding: 0;
+	color: $granite;
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration-line: underline;
+	text-shadow: none;
+	background-color: transparent;
+	border-radius: 0px;
+	visibility: visible !important;
+	padding-left: 27px;
+}
+
+.irs-min::before,
+.irs-max::before {
+	position: absolute;
+	left: 0;
+	font-family: 'AnyConv.com__SFProDisplay-Regular';
+	font-size: 14px;
+	line-height: 17px;
+	color: $silver;
+	text-decoration-line: none;
+}
+
+.irs-min::before {
+	content: 'от';
+
+}
+
+.irs-max::before {
+	content: 'до';
+}
+
+.irs--flat .irs-line {
+	top: 25px;
+	height: 1px;
+	background-color: #E0E0E0;
+	// border: 1px solid #E0E0E0;
+	border-radius: 0px;
+}
+
+.irs--flat .irs-bar {
+	top: 25px;
+	height: 3px;
+	background-color: $blue;
+}
+
+.irs--flat .irs-handle {
+	width: 8px;
+	height: 8px;
+	background-color: $blue;
+	border-radius: 50%;
+}
+
+.irs--flat .irs-handle>i:first-child {
+	background-color: transparent;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+	background-color: transparent;
+}
+
+// 4 lessons 1:04:20
 
 
 @import "_media";

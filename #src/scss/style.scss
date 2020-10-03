@@ -1395,7 +1395,177 @@ button {
 }
 
 
-// досмотрел 4 урок
+// Start Product-page
+
+.product-card {
+	margin-bottom: 80px;
+}
+
+.product-card__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-card__img-box {
+	position: relative;
+	max-width: 500px;
+	padding-top: 64px;
+	text-align: center;
+	font-family: 'Barlow-Regular';
+
+	&::before {
+		font-family: 'AnyConv.com__SFProDisplay-Regular';
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.12em;
+		color: #FFFFFF;
+		padding: 13px 25px;
+		border-radius: 3px;
+	}
+}
+
+.product-card__content {
+	max-width: 570px;
+}
+
+.product-card__price-old {
+	font-family: 'Barlow-Regular';
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 44px;
+	opacity: 0.6;
+	background-image: url(../img/old-line.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.product-card__price-new {
+	font-family: 'Barlow-Bold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	margin-bottom: 17px;
+}
+
+.product-card__link {
+	font-size: 15px;
+	line-height: 18px;
+	color: $blue;
+	border-bottom: 1px solid $blue;
+}
+
+.product-card__title {
+	font-family: 'AnyConv.com__SFProDisplay-Bold';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 10px;
+}
+
+.product-card__code {
+	font-size: 15px;
+	line-height: 18px;
+	opacity: 0.6;
+	margin-bottom: 22px;
+}
+
+.product-card__buttons {
+	margin-bottom: 50px;
+}
+
+.product-card__tab {
+	font-size: 20px;
+	line-height: 24px;
+	opacity: 0.6;
+	padding-bottom: 5px;
+	padding-right: 17px;
+	margin-bottom: 5px;
+}
+
+.product-card__tab+.product-card__tab {
+	padding-left: 17px;
+}
+
+.product-card__tab.tab--active {
+	font-family: 'AnyConv.com__SFProDisplay-Bold';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	opacity: 1;
+	border-bottom: 2px solid $blue;
+}
+
+.product-card__item{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0 6px;
+	border-bottom: 1px solid rgba($granite, .1);
+}
+
+// 1 урок 45:23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

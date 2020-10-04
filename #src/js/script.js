@@ -83,4 +83,12 @@ $(function () {
     $(".catalog__filter-btngrid").removeClass("catalog__filter-button--active");
     $(".product-item__wrapper").addClass("product-item__wrapper--list");
   });
+
+  // Звёздный рейтинг
+  $(".rate-yo").rateYo({
+    starWidth: "23px",
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+    normalFill: "#C4C4C4",
+  });
 });

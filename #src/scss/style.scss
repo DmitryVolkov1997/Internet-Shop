@@ -1497,12 +1497,70 @@ button {
 	border-bottom: 2px solid $blue;
 }
 
-.product-card__item{
+.product-card__item {
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 0 6px;
 	border-bottom: 1px solid rgba($granite, .1);
+
+	&-left {
+		padding-right: 15px;
+	}
+
+	&-right {
+		width: 125px;
+	}
 }
+
+.product-card__more {
+	font-size: 14px;
+	line-height: 17px;
+	color: $blue;
+	border-bottom: 1px solid $blue;
+	margin-bottom: 40px;
+}
+
+.product-card__list {
+	margin-bottom: 20px;
+}
+
+.product-card__btn {
+
+	button {
+		background-color: $blue;
+		border: none;
+		border-radius: 3px;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		padding: 16px 53px;
+		cursor: pointer;
+	}
+}
+
+
+.product-card__buttons {
+	a {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+// Досмотрел 1 видео звёздный рейтинг
+
+
+
+
+
+
+
+
 
 // 1 урок 45:23
 

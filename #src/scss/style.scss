@@ -75,6 +75,10 @@ input {
 	display: flex;
 }
 
+.menu-btn{
+	display: none;
+}
+
 .header__adress {
 	position: relative;
 	margin-right: 60px;
@@ -117,8 +121,8 @@ input {
 	background: $blue;
 	color: #ffffff;
 	text-align: center;
-	bottom: -15px;
-	right: -14px;
+	bottom: -2px;
+	right: -13px;
 }
 
 .header__bottom {
@@ -1680,7 +1684,6 @@ input {
 
 
 
-// 2 видео 33:30 ВЁРСТКА ТАБОВ
 
 
 

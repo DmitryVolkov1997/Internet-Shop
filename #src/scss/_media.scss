@@ -1,0 +1,41 @@
+@media(max-width:1100px) {
+	.menu__item {
+		padding-left: 25px;
+	}
+
+	.header__adress{
+		margin-right: 20px;
+	}
+}
+
+@media(max-width:968px) {
+	.header__bottom{
+		display: none;
+	}
+	.menu__list{
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+
+	.menu-btn__line{
+		border-radius: 3px;
+		background: $granite;
+		width: 34px;
+		height: 3px;
+		margin: 8px 0;
+	}
+}
+
+@media(max-width:640px) {
+	.header__adress{
+		display: none;
+	}
+}
+
+// 1.Адаптив шапка сайта (25:15)

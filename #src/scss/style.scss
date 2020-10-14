@@ -1670,10 +1670,30 @@ input {
 	}
 }
 
+.menu-mobile__list{
+	width: 243px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-mobile__item {
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__link {
+	display: block;
+	padding-left: 53px;
+	padding-top: 36px;
+}
+
+.menu-mobile__img{
+	position: absolute;
+	left: 11px;
+	bottom: 0;
+}
 
 
-
-
+// Адаптив шапка сайта 1 урок время 40:46
 
 
 

@@ -3986,6 +3986,29 @@ input {
   text-transform: uppercase;
 }
 
+.menu-mobile__list {
+  width: 243px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-mobile__item {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__link {
+  display: block;
+  padding-left: 53px;
+  padding-top: 36px;
+}
+
+.menu-mobile__img {
+  position: absolute;
+  left: 11px;
+  bottom: 0;
+}
+
 @media (max-width: 1100px) {
   .menu__item {
     padding-left: 25px;

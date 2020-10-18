@@ -28,6 +28,15 @@ $(function () {
       '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="img/arrow-left.svg" alt=""></button>',
     nextArrow:
       '<button class="banner-section__slider-btn banner-section__slider-btnpnext"><img src="img/arrow-right.svg" alt=""></button>',
+
+    responsive: [
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   // Start tabs
@@ -91,4 +100,10 @@ $(function () {
     spacing: "7px",
     normalFill: "#C4C4C4",
   });
+
+  $('.menu-btn').on('click', function(){
+	$(".menu-mobile__list").toggleClass("menu-mobile__list--active");
+  });
 });
+
+

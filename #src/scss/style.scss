@@ -53,6 +53,16 @@ input {
 	outline: none;
 }
 
+body {
+	color: $granite;
+	font-family: 'AnyConv.com__SFProDisplay-Regular';
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
 .header__top-inner {
 	display: flex;
 	align-items: center;
@@ -75,7 +85,7 @@ input {
 	display: flex;
 }
 
-.menu-btn{
+.menu-btn {
 	display: none;
 }
 
@@ -1640,7 +1650,7 @@ input {
 	margin-right: 96px;
 }
 
-.workhours{
+.workhours {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1670,9 +1680,22 @@ input {
 	}
 }
 
-.menu-mobile__list{
+.menu-mobile__list {
 	width: 243px;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	transform: translateX(-100%);
+	transition: all 0.3s;
+	position: absolute;
+	z-index: 10;
+	background-color: #ffffff;
+}
+
+.menu__mobile-linewrapper {
+	display: none;
+}
+
+.menu-mobile__list--active {
+	transform: translateX(0);
 }
 
 .menu-mobile__item {
@@ -1686,14 +1709,43 @@ input {
 	padding-top: 36px;
 }
 
-.menu-mobile__img{
+.menu-mobile__img {
 	position: absolute;
 	left: 11px;
 	bottom: 0;
 }
 
+// Адаптив шапка сайта 1 урок время 59:35
 
-// Адаптив шапка сайта 1 урок время 40:46
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

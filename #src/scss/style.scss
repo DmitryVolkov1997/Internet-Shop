@@ -243,10 +243,14 @@ body {
 	}
 }
 
-.slick-active {
+/* .slick-active {
 	li button {
 		background-color: #fff;
 	}
+} */
+
+.slick-dots .slick-active button {
+	background-color: #fff;
 }
 
 .price {
@@ -1715,8 +1719,17 @@ body {
 	bottom: 0;
 }
 
-// Адаптив шапка сайта 1 урок время 59:35
+.product-slider .slick-dots {
+	bottom: -30px;
+}
 
+.product-slider .slick-dots button {
+	background: #C4C4C4;
+}
+
+.product-slider .slick-dots .slick-active button {
+	background-color: $blue;
+}
 
 
 

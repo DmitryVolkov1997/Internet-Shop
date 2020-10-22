@@ -1,3 +1,9 @@
+@media(max-width:1300px) {
+	.product__more {
+		margin-top: 60px;
+	}
+}
+
 @media(max-width:1200px) {
 	.banner-section__inner {
 		justify-content: space-around;
@@ -14,6 +20,10 @@
 
 	.categories__inner {
 		justify-content: space-around;
+	}
+
+	.banner-link img {
+		width: 100%;
 	}
 }
 
@@ -137,6 +147,11 @@
 	.search__content-from {
 		position: relative;
 	}
+
+	.banner-link img {
+		min-height: 90px;
+		object-fit: contain;
+	}
 }
 
 @media(max-width:440px) {
@@ -149,4 +164,4 @@
 	}
 }
 
-// 3 урок адаптив ДОСМОТРЕЛ
+// 4 урок адаптив ДОСМОТРЕЛ

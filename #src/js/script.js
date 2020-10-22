@@ -65,6 +65,39 @@ $(function () {
       '<button class="products__slider__slider-btn products__slider__slider-btnprev"><img src="img/arrow-black-left.svg" alt=""></button>',
     nextArrow:
       '<button class="products__slider__slider-btn products__slider__slider-btnpnext"><img src="img/arrow-black-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".filter-style").styler();

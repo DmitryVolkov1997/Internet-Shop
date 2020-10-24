@@ -105,6 +105,17 @@
 	}
 }
 
+@media(max-width:940px) {
+	.footer__top-inner {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.footer__top-item {
+		margin-bottom: 25px;
+	}
+}
+
 @media(max-width:640px) {
 	.header__adress {
 		display: none;
@@ -154,6 +165,42 @@
 	}
 }
 
+@media(max-width:540px) {
+	.footer__top-item {
+		width: 100%;
+	}
+
+	.footer__bottom {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.footer__bottom-link {
+		margin: 12px 0;
+	}
+
+	.footer__top-inner {
+		justify-content: flex-start;
+	}
+
+	.footer__top-item.footer__top-newsletter {
+		// margin-right: 0;
+		// width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		width: 290px;
+		text-align: center;
+	}
+
+	.footer__top-item.footer__top-social {
+		width: 100%;
+	}
+
+	.social-list {
+		justify-content: center;
+	}
+}
+
 @media(max-width:440px) {
 	.banner-section__slider-img {
 		min-height: 164px;
@@ -164,4 +211,4 @@
 	}
 }
 
-// 4 урок адаптив ДОСМОТРЕЛ
+// 5 время 17:34

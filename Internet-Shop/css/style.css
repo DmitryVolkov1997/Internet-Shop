@@ -2970,7 +2970,7 @@ body {
   line-height: 17px;
   border: none;
   outline: none;
-  padding: 0 12px;
+  padding: 8px 12px;
   background-color: #ffffff;
   width: 100%;
 }
@@ -4060,6 +4060,10 @@ body {
   display: none;
 }
 
+.product-card__btn-mobile {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .product__more {
     margin-top: 60px;
@@ -4172,6 +4176,7 @@ body {
     width: 1000px;
   }
 
+  .catalog__filter-itemsinner,
   .tabs__wrapper,
   .breadcrumbs__inner {
     overflow-x: scroll;
@@ -4181,21 +4186,28 @@ body {
     overflow: hidden;
   }
 
-  .aside__btn {
-    display: block;
-    padding: 15px 0;
-    width: 100%;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    background-color: #1C62CD;
-    border-radius: 3px;
+  .product-card__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
-  .aside-filter {
+  .product-card__tabs {
     display: none;
+  }
+
+  .product-card__content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .product-card__btn-mobile {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .product-card__img-box {
+    width: 100%;
   }
 }
 
@@ -4209,6 +4221,18 @@ body {
 
   .footer__top-item {
     margin-bottom: 25px;
+  }
+
+  .catalog__filter-btn button {
+    display: none;
+  }
+
+  .catalog__filter-btn {
+    margin-top: 30px;
+  }
+
+  .catalog__filter {
+    display: block;
   }
 }
 
@@ -4266,6 +4290,36 @@ body {
   .catalog__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .aside__btn {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    background-color: #1C62CD;
+    border-radius: 3px;
+  }
+
+  .aside-filter {
+    display: none;
+  }
+
+  .product-card__img {
+    max-width: 100%;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product-card__buttons a {
+    margin-right: 10px;
   }
 }
 
@@ -4362,6 +4416,16 @@ body {
 
   .categories__item {
     padding: 20px 10px 16px;
+  }
+
+  .pagination-list__item {
+    margin: 0;
+  }
+
+  .footer-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

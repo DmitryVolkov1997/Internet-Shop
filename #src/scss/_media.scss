@@ -39,6 +39,10 @@
 	.header__adress {
 		margin-right: 20px;
 	}
+
+	.card__input-search {
+		margin-right: 0;
+	}
 }
 
 @media(max-width:968px) {
@@ -131,7 +135,7 @@
 		margin-top: 40px;
 	}
 
-	.product-card__img-box{
+	.product-card__img-box {
 		width: 100%;
 	}
 }
@@ -156,6 +160,25 @@
 
 	.catalog__filter {
 		display: block;
+	}
+
+	.card__top-line label {
+		display: block;
+		width: 100%;
+		margin-bottom: 25px;
+		margin-left: 0;
+	}
+
+	.card__list-item {
+		display: block;
+
+		div {
+			margin-bottom: 15px;
+		}
+	}
+
+	.card__list-itemtitle {
+		display: none;
 	}
 }
 
@@ -228,11 +251,11 @@
 		display: none;
 	}
 
-	.product-card__img{
+	.product-card__img {
 		max-width: 100%;
 	}
 
-	.product-card__title{
+	.product-card__title {
 		font-size: 20px;
 		line-height: 24px;
 	}
@@ -335,4 +358,4 @@
 	}
 }
 
-// 7 lesson responsive time 12:46
+// 7 досмотрел урок

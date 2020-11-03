@@ -4108,6 +4108,10 @@ body {
   .header__adress {
     margin-right: 20px;
   }
+
+  .card__input-search {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 968px) {
@@ -4233,6 +4237,25 @@ body {
 
   .catalog__filter {
     display: block;
+  }
+
+  .card__top-line label {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .card__list-item {
+    display: block;
+  }
+
+  .card__list-item div {
+    margin-bottom: 15px;
+  }
+
+  .card__list-itemtitle {
+    display: none;
   }
 }
 

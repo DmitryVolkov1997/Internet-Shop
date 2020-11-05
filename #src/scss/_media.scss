@@ -338,6 +338,10 @@
 	.footer__topdrop--active::after {
 		transform: rotate(180deg);
 	}
+
+	.footer__topdrop {
+		pointer-events: auto;
+	}
 }
 
 @media(max-width:440px) {
@@ -357,5 +361,3 @@
 		justify-content: center;
 	}
 }
-
-// 7 досмотрел урок

@@ -44,12 +44,14 @@ $(function () {
     e.preventDefault();
 
     $($(this).siblings()).removeClass("tab--active");
-    $($(this).parent().siblings().find("div")).removeClass(
+    $($(this).closest(".tabs__wrapper").siblings().find("div")).removeClass(
       "tabs-content--active"
     );
 
     $(this).addClass("tab--active");
-    $($(this).attr("href")).addClass("tabs-content--active");
+	$($(this).attr("href")).addClass("tabs-content--active");
+	
+	$(".product-slider").slick('setPosition');
   });
 
   // Start Heart

@@ -4064,6 +4064,10 @@ body {
   display: none;
 }
 
+.footer__topdrop {
+  pointer-events: none;
+}
+
 @media (max-width: 1300px) {
   .product__more {
     margin-top: 60px;
@@ -4429,6 +4433,10 @@ body {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+
+  .footer__topdrop {
+    pointer-events: auto;
   }
 }
 
